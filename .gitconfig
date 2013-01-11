@@ -1,0 +1,38 @@
+[alias]
+
+	co = checkout
+	st = status
+	ci = commit
+	rb = rebase
+	dy = status
+	lg = log --pretty=oneline --abbrev-commit
+  mff = merge --no-ff
+  dc = diff --cached
+  
+[user]
+	name = Andreas Heim
+	email = andreas@heim.no
+
+[color]
+	branch = auto
+  	diff = auto
+  	status = auto
+
+[color "branch"]
+  	current = yellow reverse
+  	local = yellow
+  	remote = green
+
+[color "diff"]
+  	meta = yellow bold
+  	frag = magenta bold
+  	old = red bold
+  	new = green bold
+
+[color "status"]
+  	added = yellow
+  	changed = green
+  	untracked = cyan
+
+[push]
+  default = tracking
