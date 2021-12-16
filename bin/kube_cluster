@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+#kubectl config current-context | cut -d '_' -f4
+cat ~/.kube/config | grep current | cut -d'_' -f4

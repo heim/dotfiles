@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+cat ~/.config/gcloud/configurations/config_$(cat ~/.config/gcloud/active_config) | grep project | cut -d' ' -f3
+#gcloud config get-value core/project --quiet
+
