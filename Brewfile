@@ -23,7 +23,6 @@ brew "micronaut"
 brew "watch"
 brew "ca-certificates"
 brew "gradle"
-brew "kubernetes-helm"
 brew "wget"
 
 #Other stuff
@@ -34,3 +33,5 @@ cask "alfred"
 cask "iterm2"
 brew "neovim"
 cask "discord"
+cask "spotify"
+cask "divvy"
