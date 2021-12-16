@@ -1,0 +1,124 @@
+set nocompatible
+
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"" alternatively, pass a path where Vundle should install plugins
+""call vundle#begin('~/some/path/here')
+"
+"" let Vundle manage Vundle, required
+"Plugin 'gmarik/Vundle.vim'
+"
+"" The following are examples of different formats supported.
+"" Keep Plugin commands between vundle#begin/end.
+"" plugin on GitHub repo
+"Plugin 'ekalinin/Dockerfile.vim'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'briandoll/change-inside-surroundings.vim'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/rainbow_parentheses.vim'
+"Plugin 'avakhov/vim-yaml.git'
+"Plugin 'markcornick/vim-terraform'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Plugin 'tpope/vim-fireplace'
+"Plugin 'tpope/vim-salve'
+"Plugin 'tpope/vim-projectionist'
+"Plugin 'tpope/vim-dispatch'
+"" All of your Plugins must be added before the following line
+"call vundle#end()            " required
+"
+
+
+syntax on
+filetype plugin indent on
+
+" fix madness with rbenv
+set shell=/bin/bash
+let g:vim_markdown_folding_disabled=1
+
+" do not save temporary files
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+
+
+let mapleader=","
+
+" Remap the tab key to do autocompletion or indentation depending on the
+" " context (from http://www.vim.org/tips/tip.php?tip_id=102)
+function! InsertTabWrapper()
+     let col = col('.') - 1
+     if !col || getline('.')[col - 1] !~ '\k'
+	return "\<tab>"
+     else
+        return "\<c-p>"
+     endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-r>
+
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+autocmd VimEnter * RainbowParenthesesActivate
+autocmd VimEnter * RainbowParenthesesLoadRound
+autocmd VimEnter * RainbowParenthesesLoadSquare
+autocmd VimEnter * RainbowParenthesesLoadBraces
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+"set textwidth=72
+"set formatoptions-=c
+
+" ,r returns to file explorer
+map ,r :Rexplore<CR> 
+
+" turn on and off search highlighting
+map ,s :set hlsearch!<CR>
+
+" go to next nd previous buffer
+map ,b :bp<CR>
+map ,n :bn<CR>
+
+"move lines up and down
+map - ddp
+map _ ddkP
+
+"make current word uppercase
+imap <c-u> <esc>viwUea
+set encoding=utf-8
+
+"edit my vimrc-file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+syntax enable
+set t_Co=256
+set background=dark
+colorscheme grb256
+
+" show line numbers
+set number
+" disable arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" navigate splits with c-hjkl
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
