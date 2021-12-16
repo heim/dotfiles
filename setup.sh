@@ -1,7 +1,16 @@
-#! /bin/sh
+#!/bin/bash
+set -e
 
-ln -s ~/.dotfiles/.colorizerc ~/.colorizerc
-ln -s ~/.dotfiles/.dircolors ~/.dircolors
-ln -s ~/.dotfiles/.gemrc ~/.gemrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.irbrc ~/.irbrc
+if test ! $(which brew); then
+  echo "Installing homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+echo "Updating homebrew"
+brew update
+brew bundle
+
+
+if ! [[ -d ~/.oh-my-zsh ]]; then
+  echo "Installing oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
