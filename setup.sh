@@ -16,8 +16,16 @@ if ! [[ -d ~/.oh-my-zsh ]]; then
 fi
 
 echo "Linking custom oh-my-zsh stuff"
-ln -s ~/dotfiles/oh-my-zsh-custom ~/.oh-my-zsh/custom
-ln -s ~/.zshrc ~/.oh-my-zsh/custom/zshrc
+if [[ -f ~/.oh-my-zsh/custom/example.zsh ]]; then
+  echo "Example folder exists in oh-my-zsh. Deleting"
+  rm -r ~/.oh-my-zsh/custom
+  ln -s ~/dotfiles/oh-my-zsh-custom ~/.oh-my-zsh/custom
+fi
+
+if [[ -f  ~/.zshrc ]]; then
+  rm ~/.zshrc
+fi
+ln -s ~/.oh-my-zsh/custom/zshrc ~/.zshrc
 
 echo "Symlinking dotfiles"
 ./symlink_dotfiles.sh
