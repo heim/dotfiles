@@ -1,3 +1,7 @@
 #! /usr/bin/env bash
 #kubectl config current-context | cut -d '_' -f4
-cat ~/.kube/config | grep current | cut -d'_' -f4
+if [[ -f ~/.kube/config ]]; then
+  cat ~/.kube/config | grep current | cut -d'_' -f4
+else
+  echo "no cluster"
+fi

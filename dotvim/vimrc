@@ -67,10 +67,10 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-autocmd VimEnter * RainbowParenthesesActivate
-autocmd VimEnter * RainbowParenthesesLoadRound
-autocmd VimEnter * RainbowParenthesesLoadSquare
-autocmd VimEnter * RainbowParenthesesLoadBraces
+"autocmd VimEnter * RainbowParenthesesActivate
+"autocmd VimEnter * RainbowParenthesesLoadRound
+"autocmd VimEnter * RainbowParenthesesLoadSquare
+"autocmd VimEnter * RainbowParenthesesLoadBraces
 
 set tabstop=2
 set shiftwidth=2
