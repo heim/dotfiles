@@ -24,11 +24,11 @@ brew "watch"
 brew "ca-certificates"
 brew "gradle"
 brew "wget"
+cask "intellij-idea"
 
 #Other stuff
 cask "caffeine"
 cask "grandperspective" 
-cask "intellij-idea-ce"
 cask "alfred"
 cask "iterm2"
 brew "neovim"
