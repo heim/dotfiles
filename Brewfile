@@ -28,6 +28,7 @@ cask "intellij-idea"
 
 #Other stuff
 cask "caffeine"
+cask "tomighty"
 cask "grandperspective" 
 cask "alfred"
 cask "iterm2"
