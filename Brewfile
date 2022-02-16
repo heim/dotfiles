@@ -22,7 +22,6 @@ brew "jq"
 brew "micronaut"
 brew "watch"
 brew "ca-certificates"
-brew "gradle"
 brew "wget"
 brew "php" #shrug 
 cask "intellij-idea"
