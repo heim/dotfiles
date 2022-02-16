@@ -24,6 +24,7 @@ brew "watch"
 brew "ca-certificates"
 brew "gradle"
 brew "wget"
+brew "php" #shrug 
 cask "intellij-idea"
 
 #Other stuff
@@ -39,3 +40,4 @@ cask "divvy"
 cask "google-cloud-sdk"
 cask "zoom"
 cask "google-chrome"
+cask "rescuetime"
