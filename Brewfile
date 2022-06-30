@@ -1,5 +1,7 @@
 tap "homebrew/cask"
-#Brew
+tap "heroku/brew"
+
+#brew
 brew "ack"
 brew "berglas"	
 brew "ca-certificates"
@@ -7,7 +9,7 @@ brew "circleci"
 brew "colima"
 brew "curl"
 brew "docker"
-brew "git"
+brew "flyctl"
 brew "git"
 brew "groovy"
 brew "helm"
@@ -22,15 +24,20 @@ brew "peco"
 brew "php" #shrug 
 brew "postgres"
 brew "python@3.9"
+brew "rbenv"
+brew "heroku"
 brew "readline"
 brew "terraform"
 brew "thefuck"
 brew "tree"
+cask "visual-studio-code"
 brew "watch"
 brew "wget"
 brew "yamllint"
 brew "yarn"
 brew "yq"
+brew "warrensbox/tap/tfswitch"
+brew "kubectx"
 
 #Cask
 brew "neovim"
