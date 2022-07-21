@@ -41,6 +41,10 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 
 eval $(thefuck --alias fuck)
 
+eval "$(starship init zsh)"
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/andreas/.sdkman"
 [[ -s "/Users/andreas/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/andreas/.sdkman/bin/sdkman-init.sh"
+
