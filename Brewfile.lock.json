@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "cb73f17bb8e3acc1a4ba0879e6db2350dec0075a"
+        "revision": "928b70da88743d079ddf8cd56858db0445c2202b"
       },
       "heroku/brew": {
         "revision": "84a12f2774fa0bcafef32c2936bee15a4fd4a13b"
@@ -1487,7 +1487,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.8",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "89433ab2600c776f841c2b24f93a52ad14e7ec7f",
+        "Homebrew/homebrew-core": "adddef9b614fabd0eb08e8a0f4a019f6344923bb",
         "CLT": "13.4.0.0.1.1651278267",
         "Xcode": "13.4",
         "macOS": "12.5"
