@@ -27,7 +27,7 @@ brew "node"
 brew "openjdk@11"
 brew "peco"
 brew "php" #shrug 
-brew "postgres"
+brew "postgresql@14"
 brew "python@3.9"
 brew "rbenv"
 brew "readline"
