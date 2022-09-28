@@ -14,7 +14,7 @@ alias l="ls -lAh"
 alias ll="ls -lh"
 alias la='ls -lah'
 
-alias vi='vim'
+alias vi='nvim'
 
 alias zshreload="source ~/.zshrc"
 
