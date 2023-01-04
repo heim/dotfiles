@@ -14,9 +14,9 @@ alias l="ls -lAh"
 alias ll="ls -lh"
 alias la='ls -lah'
 
-alias vi='nvim'
+alias vi='lvim'
 
-alias zshreload="source ~/.zshrc"
+alias zshreload="omz reload"
 
 #dockers
 alias containerclean="docker ps -a -q | xargs docker rm"
@@ -35,6 +35,7 @@ alias k=kubectl
 alias g=gcloud
 alias dm=docker-machine
 alias d=docker
-
+alias dicker=d
+alias hoy=git
 
 
