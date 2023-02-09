@@ -8,9 +8,6 @@
   mff = merge --no-ff
   dc = diff --cached
   
-[user]
-	name = Andreas Heim
-	email = andreas@heim.no
 
 [color]
 	branch = auto
@@ -35,3 +32,7 @@
 
 [push]
   default = tracking
+
+
+[include]
+  path = ~/.gitconfig_private
