@@ -36,6 +36,8 @@ source $ZSH/oh-my-zsh.sh
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/usr/local/bin:$PATH:/opt/local/bin:/usr/local/share/npm/bin/
 
+source ~/.secret_env_vars
+
 # The next line enables shell command completion for gcloud.
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
