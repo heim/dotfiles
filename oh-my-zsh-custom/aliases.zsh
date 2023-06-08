@@ -6,7 +6,7 @@
 
 # cd
 alias ..='cd ..'
-alias vagrant='nocorrect vagrant'
+alias cd..='cd ..'
 # ls
 
 alias ls="ls -FGh"
