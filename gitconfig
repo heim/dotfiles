@@ -33,6 +33,20 @@
 [push]
   default = tracking
 
+[init]
+	defaultBranch = main
 
-[include]
-  path = ~/.gitconfig_private
+[user]
+	name = Andreas Heim
+	email = andreas@heim.no
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKhv71wMlHqAoTY8CnUeGs41Db0+tWDTmJNaMry/OgC1
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+
