@@ -75,4 +75,4 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-source /Users/andreas/.config/op/plugins.sh
+source $HOME/.config/op/plugins.sh
