@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "c2ba56e8ae78b148a5c560c4dfba40fe2d34bd11"
+        "revision": "60817cdd9562d137998e914df8ee5e08346cfe72"
       },
       "heroku/brew": {
         "revision": "61445bd76b04051a4f0755e031299d18bb0a4b29"
@@ -11,7 +11,7 @@
         "revision": "84700b9b05bba29bbddf2f20c8f56a994088ede8"
       },
       "homebrew/cask-fonts": {
-        "revision": "3c19a538d357a59f7f2daeff494f0ac2deba201d"
+        "revision": "881b7c19be138605e0bc5c0069333ec57b23c4f5"
       },
       "dbt-labs/dbt": {
         "revision": "1cc53ec319d00c2213aed9f433ac47500340c916"
@@ -2401,7 +2401,7 @@
         "macOS": "12.5.1"
       },
       "ventura": {
-        "HOMEBREW_VERSION": "4.1.0",
+        "HOMEBREW_VERSION": "4.1.1",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.1.0.1.1683849156",
