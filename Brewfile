@@ -46,6 +46,7 @@ brew "yq"
 #Cask
 #cask "qflipper"
 cask "1password-cli"
+cask "arc"
 cask "alfred"
 cask "discord"
 cask "divvy"

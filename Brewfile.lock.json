@@ -2151,45 +2151,45 @@
         }
       },
       "lazygit": {
-        "version": "0.39.3",
+        "version": "0.39.4",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33",
-              "sha256": "3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002",
+              "sha256": "b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002"
             },
             "arm64_monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33",
-              "sha256": "3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002",
+              "sha256": "b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002"
             },
             "arm64_big_sur": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33",
-              "sha256": "3b5e1c9ff8db13a2c6d2f75c9c506ff88616c8a7e58a18d66ab9442cb5563c33"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002",
+              "sha256": "b1a8f2cf9e1ea6ddbceb5640eb45d17be295387bab697492fad4ad32501cf002"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf",
-              "sha256": "2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3",
+              "sha256": "6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3"
             },
             "monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf",
-              "sha256": "2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3",
+              "sha256": "6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3"
             },
             "big_sur": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf",
-              "sha256": "2af561832671b9aa7f0fe91f3746cba2a8349fb4bf576a82db7ec7e9a5891daf"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3",
+              "sha256": "6056a5d3649c063450dc206c3cdf62d97e321d136dddacc83e403513740d32a3"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:3d2fd42afda4d264d1a49953a53373d480e6bde11ef92a29cb56bd08046ce3da",
-              "sha256": "3d2fd42afda4d264d1a49953a53373d480e6bde11ef92a29cb56bd08046ce3da"
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:c8613c15790152098384dd5562a87c28bf76d766505d2b9c13ed3d326fb6311a",
+              "sha256": "c8613c15790152098384dd5562a87c28bf76d766505d2b9c13ed3d326fb6311a"
             }
           }
         }
@@ -2251,7 +2251,7 @@
         }
       },
       "zoom": {
-        "version": "5.15.3.20121",
+        "version": "5.15.5.20753",
         "options": {
           "full_name": "zoom"
         }
@@ -2380,6 +2380,12 @@
         "version": "2.19.0",
         "options": {
           "full_name": "1password-cli"
+        }
+      },
+      "arc": {
+        "version": "1.0.1,40233",
+        "options": {
+          "full_name": "arc"
         }
       }
     }
