@@ -37,5 +37,6 @@ alias dm=docker-machine
 alias d=docker
 alias dicker=d
 alias hoy=git
+alias lg=lazygit
 
 
