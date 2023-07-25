@@ -3,7 +3,8 @@ vim.opt.wrap = true
 -- set
 -- github copilot shit
 lvim.plugins = {
-  { "zbirenbaum/copilot.lua",
+  {
+    "zbirenbaum/copilot.lua",
     event = { "VimEnter" },
     config = function()
       vim.defer_fn(function()
@@ -22,11 +23,26 @@ lvim.plugins = {
       end, 100)
     end,
   },
-
-  { "zbirenbaum/copilot-cmp",
+  -- {
+  --   'topaxi/gh-actions.nvim',
+  --   cmd = 'GhActions',
+  --   keys = {
+  --     { '<leader>gh', '<cmd>GhActions<cr>', desc = 'Open Github Actions' },
+  --   },
+  --   -- optional, you can also install and use `yq` instead.
+  --   build = 'make',
+  --   dependencies = { 'nvim-lua/plenary.nvim', 'MunifTanjim/nui.nvim' },
+  --   opts = {},
+  --   config = function(_, opts)
+  --     require('gh-actions').setup(opts)
+  --   end,
+  -- },
+  {
+    "zbirenbaum/copilot-cmp",
     after = { "copilot.lua", "nvim-cmp" },
   },
-  { "jackMort/ChatGPT.nvim",
+  {
+    "jackMort/ChatGPT.nvim",
     config = function()
       require("chatgpt").setup({
       })
@@ -37,7 +53,7 @@ lvim.plugins = {
       "nvim-telescope/telescope.nvim",
     }
   },
-  { "mattkubej/jest.nvim"}
+  { "mattkubej/jest.nvim" }
 }
 
 lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
