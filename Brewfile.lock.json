@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "60817cdd9562d137998e914df8ee5e08346cfe72"
+        "revision": "2ca9675483001e1c859436a3d99915043414e348"
       },
       "heroku/brew": {
         "revision": "61445bd76b04051a4f0755e031299d18bb0a4b29"
