@@ -23,7 +23,6 @@ lvim.plugins = {
       end, 100)
     end,
   },
-
   {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua", "nvim-cmp" },
