@@ -3,7 +3,8 @@ vim.opt.wrap = true
 -- set
 -- github copilot shit
 lvim.plugins = {
-  { "zbirenbaum/copilot.lua",
+  {
+    "zbirenbaum/copilot.lua",
     event = { "VimEnter" },
     config = function()
       vim.defer_fn(function()
@@ -23,10 +24,12 @@ lvim.plugins = {
     end,
   },
 
-  { "zbirenbaum/copilot-cmp",
+  {
+    "zbirenbaum/copilot-cmp",
     after = { "copilot.lua", "nvim-cmp" },
   },
-  { "jackMort/ChatGPT.nvim",
+  {
+    "jackMort/ChatGPT.nvim",
     config = function()
       require("chatgpt").setup({
       })
@@ -37,8 +40,15 @@ lvim.plugins = {
       "nvim-telescope/telescope.nvim",
     }
   },
-  { "mattkubej/jest.nvim"}
+  { "mattkubej/jest.nvim" },
+  {
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  }
 }
+require("oil").setup()
 
 lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
 table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
