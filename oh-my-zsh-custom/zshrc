@@ -76,3 +76,5 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 source $HOME/.config/op/plugins.sh
+
+source /Users/andreas/.docker/init-zsh.sh || true # Added by Docker Desktop
