@@ -4,7 +4,6 @@ tap "1password/tap"
 
 #brew
 brew "ack"
-brew "berglas"	
 brew "ca-certificates"
 brew "cmake"
 brew "curl"
