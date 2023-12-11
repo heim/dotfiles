@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 
-commands/install_homebrew.sh
-commands/install_gcloud_components.sh
-commands/install_omz.sh
-commands/link_dotvim.sh
-commands/install_sdkman.sh
-commands/install_nvm.sh
+script/install_homebrew.sh
+script/install_gcloud_components.sh
+script/install_omz.sh
+script/link_dotvim.sh
+script/install_sdkman.sh
+script/install_nvm.sh
 echo "Symlinking dotfiles"
-#./symlink_dotfiles.sh
+./symlink_dotfiles.sh
 
 
