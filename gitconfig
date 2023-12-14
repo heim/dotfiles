@@ -32,6 +32,7 @@
 
 [push]
   default = tracking
+  autoSetupRemote = true
 
 [init]
 	defaultBranch = main

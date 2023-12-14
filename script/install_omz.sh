@@ -12,4 +12,5 @@ if [[ -f $HOME/.zshrc ]]; then
   rm $HOME/.zshrc
 fi
 
+rm -rf $HOME/.zshrc
 ln -s $HOME/dotfiles/oh-my-zsh-custom/zshrc $HOME/.zshrc
