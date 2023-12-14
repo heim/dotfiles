@@ -19,6 +19,7 @@ brew "lazygit"
 brew "neovim"
 brew "node"
 brew "php" #shrug 
+brew "powerlevel10k"
 brew "protobuf"
 brew "python@3.9"
 brew "readline"

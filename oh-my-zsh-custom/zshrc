@@ -1,12 +1,22 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+#set p10k theme
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+
 # Path to your oh-my-zsh configuration.
 ZSH_CUSTOM=$HOME/dotfiles/oh-my-zsh-custom
 ZSH_DISABLE_COMPFIX=true
 ZSH=$HOME/.oh-my-zsh
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="heim"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Example aliases
 
@@ -44,7 +54,7 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 
 eval $(thefuck --alias fuck)
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -81,3 +91,6 @@ source $HOME/.config/op/plugins.sh
 source /Users/andreas/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
