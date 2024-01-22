@@ -7,4 +7,5 @@ export STARSHIP_CONFIG="$HOME/dotfiles/starship.toml"
 export DBT_PROFILES_DIR="$HOME/.dbt/"
 export SAGA_USER_EMAIL=andreas.heim@vegvesen.no
 export SAGA_VERIFY_LB_SECRET=false
+export POWERLEVEL9K_INSTANT_PROMPT=quiet #sometimes lastpass isn't running
 #export GITHUB_OWNER=svvsaga
