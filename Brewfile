@@ -41,8 +41,8 @@ brew "yq"
 
 #Cask
 cask "1password-cli"
-cask "arc"
 cask "alfred"
+cask "google-chrome"
 cask "discord"
 cask "docker"
 cask "evernote"
