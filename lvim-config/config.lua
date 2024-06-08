@@ -3,30 +3,31 @@ vim.opt.wrap = true
 -- set
 -- github copilot shit
 lvim.plugins = {
-  {
-    "zbirenbaum/copilot.lua",
-    event = { "VimEnter" },
-    config = function()
-      vim.defer_fn(function()
-        require("copilot").setup {
-          plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
-          suggestion = {
-            auto_trigger = true,
-            keymap = {
-              accept = "<C-a>"
-              -- prev = "<M-[>",
-              -- next = "<M-]>",
-              -- dismiss = "<C-]>",
-            },
-          },
-        }
-      end, 100)
-    end,
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua", "nvim-cmp" },
-  },
+  --  {
+  --    "zbirenbaum/copilot.lua",
+  --    event = { "VimEnter" },
+  --    config = function()
+  --      vim.defer_fn(function()
+  --        require("copilot").setup {
+  --          plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
+  --          suggestion = {
+  --            auto_trigger = true,
+  --            keymap = {
+  --              accept = "<C-a>"
+  --              -- prev = "<M-[>",
+  --              -- next = "<M-]>",
+  --              -- dismiss = "<C-]>",
+  --            },
+  --          },
+  --        }
+  --      end, 100)
+  --    end,
+  --  },
+  --  {
+  --    "zbirenbaum/copilot-cmp",
+  --    after = { "copilot.lua", "nvim-cmp" },
+  --  },
+  { "github/copilot.vim" },
   {
     "jackMort/ChatGPT.nvim",
     config = function()
