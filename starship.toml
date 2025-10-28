@@ -1,3 +1,0 @@
-[gcloud]
-symbol = '⛅️ '
-format = 'on [$symbol($account@$domain)(\($project\))]($style) '

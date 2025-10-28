@@ -1,5 +1,3 @@
-#ap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "1password/tap"
 
 #brew
@@ -18,7 +16,7 @@ brew "jq"
 #brew "ktlint"
 #brew "kubectl"
 #brew "lazygit"
-#brew "neovim"
+brew "neovim"
 #brew "node"
 #brew "php" #shrug 
 brew "powerlevel10k"
