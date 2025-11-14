@@ -27,3 +27,4 @@ alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE && kil
 alias lg=lazygit
 
 
+alias vi=nvim
